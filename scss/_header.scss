@@ -1,0 +1,48 @@
+.bg-header {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0,0,0, 0.3)), url("https://cdn.shopify.com/s/files/1/0444/2885/3403/files/Untitled_design_5_1512x.png?v=1648143442");
+}
+
+.parallax{
+    height: $pantalla;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    @import "nav.scss";
+}
+
+#parallax-biografia{
+    background-image: url(../multimedia/rh.jpeg);
+}
+
+#parallax-discografia {
+    background-image: url(https://scontent.frsa1-1.fna.fbcdn.net/v/t39.30808-6/277780498_557795492384947_423615601430693033_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=yBjIRSQRJawAX9hvln1&_nc_ht=scontent.frsa1-1.fna&oh=00_AT9VeX1znUq5Cm2mscB1F-oSsN1w-pt05makUOxRmQvBtA&oe=628F4FC4);
+}
+
+#parallax-eventos {
+    background-image: url(https://cdn.wegow.com/media/artist-media/richie-hawtin/richie-hawtin-1511964972.jpg);
+}
+
+#parallax-galeria {
+    background-image: url(https://www.synchronize.cl/wp-content/uploads/2020/12/richiee.png);
+}
+
+.bg-img {
+    height: $pantalla;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    @import "nav.scss";
+}
+
+@media screen and (min-width: 1024px) {
+    .bg-img {
+        transition: all 0.5s ease;
+
+        &:hover {
+            transform:scale(1.05);
+        }
+    }
+}

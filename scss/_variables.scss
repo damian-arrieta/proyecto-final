@@ -1,0 +1,22 @@
+$textos: (
+    black: #fff,
+    white: #000,
+);
+
+@each $text, $color in $textos {
+    .text-#{$text} {
+        color: $color;
+    }
+}
+
+@mixin size($alto, $ancho, $separacion) {
+    height: $alto;
+    width: $ancho;
+    padding: $separacion;
+}
+
+$spacing: 10px;
+$black: #000;
+$white: #fff;
+$pantalla: 100vh;
+

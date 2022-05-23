@@ -1,0 +1,261 @@
+main {
+
+    .eventos{
+        padding: $spacing*5 0;
+        text-align: center;
+        
+        .grid {
+            .cards {
+                @include size(100%, auto, 0);
+                grid-column: 1/-1;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .card {
+                    width: 80%;
+                    padding: $spacing*2.5;
+                    margin: auto;
+                    background-position: center center;
+                    background-size: cover;
+                    justify-content: center;
+                }
+
+                .card-1 {
+                    height: 30em;
+                    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://imgproxy.ra.co/_/quality:100/w:1500/rt:fill/plain/https://images.ra.co/97418dc5ea22a36d9cdf17394c8edca75012c6ea.jpg);
+                }
+                
+                .card-2 {
+                    height: 30em;
+                    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://imgproxy.ra.co/_/quality:100/w:650/rt:fill/plain/https://static.ra.co/images/events/flyer/2022/6/pt-0617-1498138-1947295-front.jpg?dateUpdated=1649759357067);
+                }
+                
+                .card-3 {
+                    height: 30em;
+                    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://imgproxy.ra.co/_/quality:100/w:1500/rt:fill/plain/https://static.ra.co/images/events/flyer/2022/8/pt-0810-1408566-1765278-front.jpg?dateUpdated=1651682836080);
+                }
+            }
+        }
+    }
+
+    .bg-acid-king {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0,0,0, 0.3)), url("https://cdn.shopify.com/s/files/1/0444/2885/3403/files/RH_COver.png?v=1638431869");
+    }
+    
+    .bg-model1 {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0,0,0, 0.3)), url("https://playdifferently.org/wordpress/wp-content/themes/pd/assets/img/hero-model-1.jpg");
+    }
+
+    .bg-biografia {
+        background-image: url(https://imgproxy.ra.co/_/quality:100/plain/https://static.ra.co/images/profiles/square/richiehawtin.jpg?dateUpdated=1558076459000);
+    }
+
+    .history{
+        padding: $spacing*5 0;
+        text-align: center;
+
+        .grid {
+            .years {
+                @include size(100%, auto, 0);
+                grid-column: 1/-1;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .year {
+                    @include size(auto, 80%, $spacing);
+                    margin: auto;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .discografia {
+        text-align: center;
+
+        .grid {
+            .albums {
+                @include size(100%, auto, 0);
+                grid-column: 1/-1;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .album {
+                    padding: $spacing;
+                    margin: auto;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    .multimedia {
+        display: none;
+    }
+
+    .concerts {
+        padding: $spacing*2.5 0;
+
+        .grid {
+            .titulo-concert {
+                margin: auto;
+                grid-column: 1/-1;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .img-concert{
+                @include size(auto, 100%, $spacing*2);
+                grid-column: 1/-1;
+                display: flex;
+                justify-content: center;
+
+                .img {
+                    @include size(100%, 300px, 0);
+                }
+            }
+        }
+    }
+
+    .galeria {
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: auto;
+
+        .grid {
+            .images {
+                grid-column: 1/-1;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .image {
+                    @include size(auto, 320px, $spacing/2);
+                    margin: auto;
+                    justify-content: center;
+
+                    .img-gallery {
+                        @include size(100%, 100%, 0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        .eventos {
+            height: $pantalla;
+
+            .grid {
+                .cards {
+                    .card {
+                        width: 30%;
+                        padding: $spacing*5 0;
+                    }
+                }
+            }
+        }
+
+        .model1 {
+            height: $pantalla;
+        }
+
+        .biografia {
+            height: $pantalla;
+        }
+
+        .history {
+            .grid {
+                .years {
+                    .year {
+                        height: 50%;
+                        width: 30%;
+                        padding: $spacing*3 0;
+                    }
+                }
+            }
+        }
+
+        .multimedia {
+            display: block;
+            background-color: $black;
+            height: $pantalla;
+        }
+
+        .concerts {
+            padding: $spacing*5 0;
+
+            .grid {
+                .titulo-concert {
+                    grid-column: 1/7;
+                }
+
+                .img-concert{
+                    grid-column: 7/13;
+
+                    .img {
+                        max-width: 400px;
+                        height: 350px;
+                    }
+                }
+            }
+        }
+
+        .galeria {
+            .grid {
+                .images {
+                    .image {
+                        @include size (350px, 350px, 0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        .discografia {
+            .grid{
+                .albums {
+                    .album {
+                        width: 33%;
+                        padding: $spacing*3 0;
+                    }
+                }
+            }
+        }
+
+        .history {
+            height: $pantalla;
+        }
+
+        .galeria {
+            .grid {
+                .images {
+                    .image {
+                        width: 33%;
+                        transition: all 0.5s ease;
+                        cursor: pointer;
+                        
+                        .img-gallery:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

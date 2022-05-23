@@ -1,0 +1,32 @@
+footer {
+    background: $white;
+    padding: $spacing*5 0;
+    color: $black;
+    text-align: center;
+
+    .grid {
+        .textos-footer{
+            grid-column: 1/-1;
+            margin-bottom: $spacing*3;
+        }
+        
+        [class^="footer-item"]{
+            grid-column: 1/-1;
+
+            a {
+                color: $black;
+                font-size: $spacing*3;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        .grid {
+            [class^="footer-item"]{
+                grid-column: span 3;
+            }
+        }
+    }
+}

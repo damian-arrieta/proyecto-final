@@ -1,0 +1,360 @@
+.text-black {
+  color: #fff; }
+
+.text-white {
+  color: #000; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #fff; }
+
+h1 {
+  font-size: 700; }
+
+h2 {
+  font-size: 600; }
+
+h3 {
+  font-size: 400; }
+
+button {
+  transition: all 0.5s ease; }
+  button:hover {
+    transform: scale(1.2); }
+
+.icon-menu {
+  font-size: 30px;
+  color: #000000; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  width: 100%;
+  max-width: 1100px;
+  grid-gap: 3px;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center; }
+  .grid .titulo {
+    grid-column: 1/-1;
+    text-align: center;
+    margin: auto; }
+
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr); } }
+
+.bg-header {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://cdn.shopify.com/s/files/1/0444/2885/3403/files/Untitled_design_5_1512x.png?v=1648143442"); }
+
+.parallax {
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  .parallax .nav {
+    height: 80px;
+    background-color: #fff; }
+    .parallax .nav .nav-container {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      padding: 10px 15px;
+      justify-content: space-between;
+      align-items: center; }
+      .parallax .nav .nav-container .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        text-decoration: none; }
+      .parallax .nav .nav-container .nav-menu {
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        width: 100%;
+        left: 0%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: 1s ease-in-out; }
+        .parallax .nav .nav-container .nav-menu .nav-item {
+          text-decoration: none;
+          color: #fff; }
+      .parallax .nav .nav-container .nav-input {
+        display: none; }
+        .parallax .nav .nav-container .nav-input:checked + .nav-menu {
+          background-color: #000;
+          clip-path: circle(100% at center); }
+      .parallax .nav .nav-container .nav-label {
+        display: block;
+        cursor: pointer; }
+  @media screen and (min-width: 768px) {
+    .parallax .nav .nav-container {
+      padding: 25px 40px; } }
+  @media screen and (min-width: 1024px) {
+    .parallax .nav {
+      background-color: #ffffff00; } }
+
+#parallax-biografia {
+  background-image: url(../multimedia/rh.jpeg); }
+
+#parallax-discografia {
+  background-image: url(https://scontent.frsa1-1.fna.fbcdn.net/v/t39.30808-6/277780498_557795492384947_423615601430693033_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=yBjIRSQRJawAX9hvln1&_nc_ht=scontent.frsa1-1.fna&oh=00_AT9VeX1znUq5Cm2mscB1F-oSsN1w-pt05makUOxRmQvBtA&oe=628F4FC4); }
+
+#parallax-eventos {
+  background-image: url(https://cdn.wegow.com/media/artist-media/richie-hawtin/richie-hawtin-1511964972.jpg); }
+
+#parallax-galeria {
+  background-image: url(https://www.synchronize.cl/wp-content/uploads/2020/12/richiee.png); }
+
+.bg-img {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .bg-img .nav {
+    height: 80px;
+    background-color: #fff; }
+    .bg-img .nav .nav-container {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      padding: 10px 15px;
+      justify-content: space-between;
+      align-items: center; }
+      .bg-img .nav .nav-container .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        text-decoration: none; }
+      .bg-img .nav .nav-container .nav-menu {
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        width: 100%;
+        left: 0%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: 1s ease-in-out; }
+        .bg-img .nav .nav-container .nav-menu .nav-item {
+          text-decoration: none;
+          color: #fff; }
+      .bg-img .nav .nav-container .nav-input {
+        display: none; }
+        .bg-img .nav .nav-container .nav-input:checked + .nav-menu {
+          background-color: #000;
+          clip-path: circle(100% at center); }
+      .bg-img .nav .nav-container .nav-label {
+        display: block;
+        cursor: pointer; }
+  @media screen and (min-width: 768px) {
+    .bg-img .nav .nav-container {
+      padding: 25px 40px; } }
+  @media screen and (min-width: 1024px) {
+    .bg-img .nav {
+      background-color: #ffffff00; } }
+
+@media screen and (min-width: 1024px) {
+  .bg-img {
+    transition: all 0.5s ease; }
+    .bg-img:hover {
+      transform: scale(1.05); } }
+
+main .eventos {
+  padding: 50px 0;
+  text-align: center; }
+  main .eventos .grid .cards {
+    height: 100%;
+    width: auto;
+    padding: 0;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    main .eventos .grid .cards .card {
+      width: 80%;
+      padding: 25px;
+      margin: auto;
+      background-position: center center;
+      background-size: cover;
+      justify-content: center; }
+    main .eventos .grid .cards .card-1 {
+      height: 30em;
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://imgproxy.ra.co/_/quality:100/w:1500/rt:fill/plain/https://images.ra.co/97418dc5ea22a36d9cdf17394c8edca75012c6ea.jpg); }
+    main .eventos .grid .cards .card-2 {
+      height: 30em;
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://imgproxy.ra.co/_/quality:100/w:650/rt:fill/plain/https://static.ra.co/images/events/flyer/2022/6/pt-0617-1498138-1947295-front.jpg?dateUpdated=1649759357067); }
+    main .eventos .grid .cards .card-3 {
+      height: 30em;
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://imgproxy.ra.co/_/quality:100/w:1500/rt:fill/plain/https://static.ra.co/images/events/flyer/2022/8/pt-0810-1408566-1765278-front.jpg?dateUpdated=1651682836080); }
+
+main .bg-acid-king {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://cdn.shopify.com/s/files/1/0444/2885/3403/files/RH_COver.png?v=1638431869"); }
+
+main .bg-model1 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://playdifferently.org/wordpress/wp-content/themes/pd/assets/img/hero-model-1.jpg"); }
+
+main .bg-biografia {
+  background-image: url(https://imgproxy.ra.co/_/quality:100/plain/https://static.ra.co/images/profiles/square/richiehawtin.jpg?dateUpdated=1558076459000); }
+
+main .history {
+  padding: 50px 0;
+  text-align: center; }
+  main .history .grid .years {
+    height: 100%;
+    width: auto;
+    padding: 0;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    main .history .grid .years .year {
+      height: auto;
+      width: 80%;
+      padding: 10px;
+      margin: auto;
+      justify-content: center;
+      align-items: center; }
+
+main .discografia {
+  text-align: center; }
+  main .discografia .grid .albums {
+    height: 100%;
+    width: auto;
+    padding: 0;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    main .discografia .grid .albums .album {
+      padding: 10px;
+      margin: auto;
+      justify-content: center; }
+
+main .multimedia {
+  display: none; }
+
+main .concerts {
+  padding: 25px 0; }
+  main .concerts .grid .titulo-concert {
+    margin: auto;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  main .concerts .grid .img-concert {
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center; }
+    main .concerts .grid .img-concert .img {
+      height: 100%;
+      width: 300px;
+      padding: 0; }
+
+main .galeria {
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin: auto; }
+  main .galeria .grid .images {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    main .galeria .grid .images .image {
+      height: auto;
+      width: 320px;
+      padding: 5px;
+      margin: auto;
+      justify-content: center; }
+      main .galeria .grid .images .image .img-gallery {
+        height: 100%;
+        width: 100%;
+        padding: 0; }
+
+@media screen and (min-width: 768px) {
+  main .eventos {
+    height: 100vh; }
+    main .eventos .grid .cards .card {
+      width: 30%;
+      padding: 50px 0; }
+  main .model1 {
+    height: 100vh; }
+  main .biografia {
+    height: 100vh; }
+  main .history .grid .years .year {
+    height: 50%;
+    width: 30%;
+    padding: 30px 0; }
+  main .multimedia {
+    display: block;
+    background-color: #000;
+    height: 100vh; }
+  main .concerts {
+    padding: 50px 0; }
+    main .concerts .grid .titulo-concert {
+      grid-column: 1/7; }
+    main .concerts .grid .img-concert {
+      grid-column: 7/13; }
+      main .concerts .grid .img-concert .img {
+        max-width: 400px;
+        height: 350px; }
+  main .galeria .grid .images .image {
+    height: 350px;
+    width: 350px;
+    padding: 0; } }
+
+@media screen and (min-width: 1024px) {
+  main .discografia .grid .albums .album {
+    width: 33%;
+    padding: 30px 0; }
+  main .history {
+    height: 100vh; }
+  main .galeria .grid .images .image {
+    width: 33%;
+    transition: all 0.5s ease;
+    cursor: pointer; }
+    main .galeria .grid .images .image .img-gallery:hover {
+      transform: scale(1.1); } }
+
+footer {
+  background: #fff;
+  padding: 50px 0;
+  color: #000;
+  text-align: center; }
+  footer .grid .textos-footer {
+    grid-column: 1/-1;
+    margin-bottom: 30px; }
+  footer .grid [class^="footer-item"] {
+    grid-column: 1/-1; }
+    footer .grid [class^="footer-item"] a {
+      color: #000;
+      font-size: 30px; }
+
+@media screen and (min-width: 768px) {
+  footer .grid [class^="footer-item"] {
+    grid-column: span 3; } }

@@ -111,7 +111,7 @@ button {
   background-image: url(../multimedia/rh.jpeg); }
 
 #parallax-discografia {
-  background-image: url(https://scontent.frsa1-1.fna.fbcdn.net/v/t39.30808-6/277780498_557795492384947_423615601430693033_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=yBjIRSQRJawAX9hvln1&_nc_ht=scontent.frsa1-1.fna&oh=00_AT9VeX1znUq5Cm2mscB1F-oSsN1w-pt05makUOxRmQvBtA&oe=628F4FC4); }
+  background-image: url(../multimedia/consumed-in-key.jpeg); }
 
 #parallax-eventos {
   background-image: url(https://cdn.wegow.com/media/artist-media/richie-hawtin/richie-hawtin-1511964972.jpg); }
@@ -204,7 +204,7 @@ main .eventos {
       background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://imgproxy.ra.co/_/quality:100/w:650/rt:fill/plain/https://static.ra.co/images/events/flyer/2022/6/pt-0617-1498138-1947295-front.jpg?dateUpdated=1649759357067); }
     main .eventos .grid .cards .card-3 {
       height: 30em;
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://imgproxy.ra.co/_/quality:100/w:1500/rt:fill/plain/https://static.ra.co/images/events/flyer/2022/8/pt-0810-1408566-1765278-front.jpg?dateUpdated=1651682836080); }
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://media.resources.festicket.com/www/admin/uploads/images/NP22_Festicket_1400x800.jpg); }
 
 main .bg-acid-king {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://cdn.shopify.com/s/files/1/0444/2885/3403/files/RH_COver.png?v=1638431869"); }
